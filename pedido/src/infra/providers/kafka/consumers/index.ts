@@ -1,0 +1,1 @@
+import './create-customer.consumer'
