@@ -14,6 +14,7 @@ export class CreateCustomerController {
 
       return response.json(result)
     } catch(err) {
+      console.log(err)
       return response.status(400).json(err)
     }
   }
