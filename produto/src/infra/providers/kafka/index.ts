@@ -1,7 +1,7 @@
 import { Kafka, logLevel } from 'kafkajs'
 
 const kafka = new Kafka({
-  clientId: 'order',
+  clientId: 'product',
   brokers: ['localhost:9092'],
   logLevel: logLevel.WARN,
 })

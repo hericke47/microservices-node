@@ -18,3 +18,11 @@ model Customer {
 
   @@map("customers")
 }
+
+model Product {
+  id String @id @default(uuid())
+  externalId String
+  code String
+
+  @@map("products")
+}
