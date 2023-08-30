@@ -16,6 +16,8 @@ export async function createProductConsumer() {
       
       const product = JSON.parse(messageToString) as ProductConsumer
 
+      console.log(product)
+
       await prismaClient.product.create({
         data: {
           externalId: product.id,

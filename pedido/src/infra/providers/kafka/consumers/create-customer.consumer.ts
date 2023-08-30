@@ -15,6 +15,9 @@ export async function createCustomerConsumer() {
       const messageToString = message.value!.toString()
       
       const customer = JSON.parse(messageToString) as CustomerConsumer
+
+      console.log(customer)
+
       await prismaClient.customer.create({
         data: {
           externalId: customer.id,

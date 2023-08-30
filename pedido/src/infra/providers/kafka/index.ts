@@ -1,9 +1,12 @@
-import { Kafka, logLevel } from 'kafkajs'
+import { Kafka } from 'kafkajs'
 
 const kafka = new Kafka({
   clientId: 'order',
   brokers: ['localhost:9092'],
-  logLevel: logLevel.WARN,
+  retry: {
+    initialRetryTime: 300,
+    retries: 10,
+  },
 })
 
 export { kafka }
