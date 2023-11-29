@@ -26,8 +26,10 @@
 
 ## Referências e links úteis
 
-- <https://kafka.js.org/docs/introduction>
-- <https://kafka.apache.org/intro>
-- <https://www.youtube.com/live/dOdSaLcZJDk?si=jiaz3c1CKXuqR-Et>
-- <https://youtu.be/PppMhofKzy4?si=uRpddirUAdX_jnJn>
-- <https://www.youtube.com/watch?v=qOqXz5Qv_-8>
+- [Significado Microserviços](<https://www.youtube.com/watch?v=_2bDOCTnbKc>)
+- [Significado Kafka](<https://www.youtube.com/watch?v=qOqXz5Qv_-8>)
+- [Kafka + JS](<https://kafka.js.org/docs/introduction>)
+- [Apache Kafka](<https://kafka.apache.org/intro>)
+- [Kafka + NodeJs](<https://www.youtube.com/live/dOdSaLcZJDk?si=jiaz3c1CKXuqR-Et>)
+- [Entendendo um pouco mais o Kafka](<https://youtu.be/PppMhofKzy4?si=uRpddirUAdX_jnJn>)
+- [Exemplos Docker + Kafka](<https://github.com/confluentinc/cp-docker-images/tree/5.3.3-post/examples>)
