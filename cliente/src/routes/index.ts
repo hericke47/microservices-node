@@ -5,6 +5,6 @@ const router = Router()
 
 router.post("/customer", (request, response) => {
   new CreateCustomerController().handle(request, response)
-}) 
+})
 
 export { router }

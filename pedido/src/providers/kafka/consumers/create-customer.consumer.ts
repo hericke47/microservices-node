@@ -1,5 +1,5 @@
 import { prismaClient } from "../../../database/prismaClient";
-import { kafkaConsumer } from "../kafka.consumer";
+import { kafkaConsumer } from "../consumer";
 
 type CustomerConsumer = {
   email: string,

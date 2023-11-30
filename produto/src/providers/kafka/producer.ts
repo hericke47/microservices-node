@@ -10,7 +10,7 @@ export class KafkaSendMessage {
 
     console.log(`MESSAGE SENT TO TOPIC ${topic}`)
     console.log(payload)
-    
+
     await producer.send({
       topic,
       messages: [

@@ -1,5 +1,5 @@
-import { prismaClient } from "../../infra/database/prismaClient"
-import { KafkaSendMessage } from "../../infra/providers/kafka/producer"
+import { prismaClient } from "../../database/prismaClient"
+import { KafkaSendMessage } from "../../providers/kafka/producer"
 
 type UpdateOrderRequest = {
   id: string,

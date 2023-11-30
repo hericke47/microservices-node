@@ -1,4 +1,4 @@
-import { prismaClient } from "../../infra/database/prismaClient"
+import { prismaClient } from "../../database/prismaClient"
 
 type CreateOrderRequest = {
   customerId: string,

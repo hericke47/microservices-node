@@ -1,5 +1,5 @@
-import { prismaClient } from "../../infra/database/prismaClient"
-import { KafkaSendMessage } from "../../infra/provider/kafka/producer"
+import { prismaClient } from "../../database/prismaClient"
+import { KafkaSendMessage } from "../../provider/kafka/producer"
 
 type CreateClientRequest = {
   name: string,

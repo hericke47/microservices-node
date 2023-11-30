@@ -1,4 +1,4 @@
-import { kafkaConsumer } from "../kafka.consumer"
+import { kafkaConsumer } from "../consumer"
 
 type CustomerConsumer = {
   customerId: string
