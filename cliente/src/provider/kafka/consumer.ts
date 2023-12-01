@@ -1,11 +1,28 @@
 import { kafka } from "."
 
-export const kafkaConsumer = async (topic: string) => {
-  const consumer = kafka.consumer({ groupId: "ORDER_APP" })
+type CustomerConsumer = {
+  customerId: string
+  status: string
+}
+
+export async function initializeConsumer(){
+  const consumer = kafka.consumer({ groupId: "CLIENT_CONSUMER_GROUP" })
 
   await consumer.connect()
 
-  await consumer.subscribe({ topic, fromBeginning: true })
+  await consumer.subscribe({ topic: "ORDER_STATUS", fromBeginning: true })
 
-  return consumer
+  await consumer.run({
+    eachMessage: async ({ message }) => {
+      const messageToString = message.value!.toString()
+      const statusConsumer = JSON.parse(messageToString) as CustomerConsumer
+
+      // Enviar mensagem por email
+      console.log(
+        `Atualização de status - cliente: ${statusConsumer.customerId} - Status: ${statusConsumer.status}`
+      )
+    }
+  })
 }
+
+initializeConsumer()
